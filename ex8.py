@@ -14,5 +14,6 @@ while "result" not in response.text:
     response = requests.get(base_url, params=params)
     if response.json().get("status") == "Job is NOT ready":
         time.sleep(sleep)
+
 print(response.status_code)
 print(response.text)
