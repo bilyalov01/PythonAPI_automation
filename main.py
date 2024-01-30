@@ -1,5 +1,5 @@
-import requests
-
-response = requests.get("https://playground.learnqa.ru/api/get_text")
-print(response.text)
-print(response.status_code)
+f = open('pass.txt', 'r')
+for line in f:
+    line = line.replace('\n', '.')
+    print(line)
+f.close()
