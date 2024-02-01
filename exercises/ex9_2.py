@@ -1,7 +1,7 @@
 import requests
 
 """Open file with list of passwords"""
-f = open('pass.txt', 'r')
+f = open('../pass.txt', 'r')
 arr = []
 for line in f:
     line = line.replace("\n", '')
